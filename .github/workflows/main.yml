@@ -37,7 +37,7 @@ jobs:
             git pull origin main
 
             # Restart flaskapp
-            sudo systemctl restart flaskapp.service
+            sudo systemctl restart flask.service
 
             # Reload Nginx to pick up changes in the Nginx config
             sudo systemctl restart nginx.service
