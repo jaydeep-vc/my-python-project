@@ -36,8 +36,8 @@ jobs:
             cd /var/www/my-python-project
             git pull origin main
 
-            # Restart Gunicorn
-            systemctl restart gunicorn.service
+            # Restart flaskapp
+            sudo systemctl restart flaskapp.service
 
             # Reload Nginx to pick up changes in the Nginx config
-            systemctl reload nginx.service
+            sudo systemctl restart nginx.service
